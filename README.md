@@ -1,50 +1,92 @@
 # Leaf Village Information System
 
 A showcase project demonstrating a **realistic information system** for a private training provider.  
-It includes a normalized **SQLite database**, **sample data**, **advanced SQL (constraints, triggers, analytics)**, and **charts/statistical insights**.
 
-## What’s inside
-- `database/` — ready-to-run SQLite database (`LeafVillage.db`) and full build script (`LeafVillage.sql`)
-- `docs/Reports/` — two well-structured reports describing the IS plan and the database design & SQL implementation
-- `docs/Charts_Analysis/` — visuals used in the analysis (bar, column, and pie charts)
-- `datasets/` — public dataset used for insights (Udemy online courses)
-- `src/` — placeholder for future UI/API code (optional)
-
-## ERD & Key Features
-- Normalized relational model (3NF) for Students, Staff, Courses, Enrollments, Payments, Certificates, and more.
-- **Constraints & Indices** to protect integrity (e.g., unique enrollments per offering).
-- **Automation via SQL triggers** (e.g., status updates on payment/certification).
-- **Analytical queries** for revenue, course demand, staff load, and student engagement.
-- **Excel/Power Query** charts for course popularity and distributions.
-
-## Quick start
-**Option A: Use the ready DB**  
-1. Open `database/LeafVillage.db` with SQLiteStudio / DB Browser for SQLite.  
-2. Browse tables and run your own queries.
-
-**Option B: Rebuild from SQL**  
-1. Create a new SQLite database.  
-2. Run `database/LeafVillage.sql` to create tables and insert sample data.
-
-## Screenshots
-<img src="docs/Charts_Analysis/bar_chart.png" width="420"> <img src="docs/Charts_Analysis/pie_chart.png" width="420"><br/>
-<img src="docs/Charts_Analysis/column_chart.png" width="420"> <img src="docs/Charts_Analysis/courses_by_level_chart.png" width="420">
-
-## Real‑world relevance
-This mirrors operations of a small education provider: **enrolment workflows, payments, certificates, staffing, and reporting** — the kind of database many orgs rely on. Great for roles in **data, backend, or cybersecurity** (GDPR/ISO awareness, access control mindset).
-
-## How this was built
-- **SQLite** for schema + data + triggers
-- **SQL** (DDL/DML/Queries) for implementation and insights
-- **Excel + Power Query** for charts & profiling
-- **ERD-first** design with iterative refinement
-
-## Roadmap (next steps)
-- Add a lightweight **web UI** (Flask/Express/PHP) to browse students, enrollments, and payments.
-- Role-based login and audit logging.
-- Dockerfile + seed script for one-click setup.
+This project was developed as part of an academic assignment and includes:  
+- A normalized **SQLite database**  
+- **Sample data** for testing  
+- **Advanced SQL** (constraints, triggers, integrity checks)  
+- **Analytics & statistical charts** (course popularity, subscribers, levels)  
+- **Reports & documentation**  
 
 ---
 
-**Author:** Abuzar Taj • Email: tajabuzar0@gmail.com  
-If this helped you, please ⭐ the repo!
+## 📂 Project Structure
+
+
+LeafVillage-InformationSystem/
+│
+├── database/ # SQLite database & schema
+│ ├── LeafVillage.db
+│ ├── LeafVillage.sql
+│
+├── datasets/ # External dataset used for analysis
+│ └── udemy_online_education_courses_dataset.csv
+│
+├── docs/
+│ ├── ERD_leafVillage.png # Entity Relationship Diagram
+│ └── Charts_Analysis/ # Statistical analysis & charts
+│ ├── bar_chart.png
+│ ├── column_chart.png
+│ ├── courses_by_level_chart.png
+│ └── pie_chart.png
+│ └── Reports/ # Documentation & reports
+│ └── Report_Part1_InformationSystem.docx
+│
+├── LICENSE
+└── README.md
+---
+
+## 📊 Entity Relationship Diagram (ERD)
+
+<p align="center">
+  <img src="docs/ERD_leafVillage.png" alt="Entity Relationship Diagram" width="800"/>
+</p>
+
+<p align="center"><em>Figure: Normalized ERD of the LeafVillage Information System</em></p>
+---
+
+## 📈 Sample Analysis
+
+The project includes **statistical insights** from the dataset with visualizations:
+
+- Total subscribers by subject  
+- Subscribers by course level  
+- Average number of reviews by subject  
+- Percentage distribution of subscribers  
+
+<p align="center">
+  <img src="docs/Charts_Analysis/bar_chart.png" alt="Bar Chart Example" width="600"/>
+</p>
+---
+
+## 🚀 How to Run
+
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/Abuzartaj/LeafVillage---InformationSystem.git
+
+---
+
+### Step 5: Add Features + License
+```markdown
+---
+
+## 📌 Key Features
+- Normalized database with **students, teachers, classes, and enrollments**  
+- **Constraints** to enforce data integrity  
+- **Triggers** to automate updates  
+- **Analytical queries** for insights  
+- Professional **ERD & reports**  
+
+---
+
+## 📜 License
+This project is licensed under the MIT License.  
+Feel free to use and modify with attribution.  
+
+---
+
+✨ *Developed by Abuzar Taj as part of BSc Computer Science coursework.*  
+
+
