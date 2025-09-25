@@ -12,29 +12,24 @@ This project was developed as part of an academic assignment and includes:
 ---
 
 ## 📂 Project Structure
-
-
 LeafVillage-InformationSystem/
-│
 ├── database/ # SQLite database & schema
 │ ├── LeafVillage.db
-│ ├── LeafVillage.sql
-│
+│ └── LeafVillage.sql
 ├── datasets/ # External dataset used for analysis
 │ └── udemy_online_education_courses_dataset.csv
-│
-├── docs/
+├── docs/ # Documentation & diagrams
 │ ├── ERD_leafVillage.png # Entity Relationship Diagram
 │ └── Charts_Analysis/ # Statistical analysis & charts
 │ ├── bar_chart.png
 │ ├── column_chart.png
 │ ├── courses_by_level_chart.png
 │ └── pie_chart.png
-│ └── Reports/ # Documentation & reports
+├── Reports/ # Documentation & reports
 │ └── Report_Part1_InformationSystem.docx
-│
 ├── LICENSE
 └── README.md
+
 ---
 
 ## 📊 Entity Relationship Diagram (ERD)
